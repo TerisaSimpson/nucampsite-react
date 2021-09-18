@@ -55,13 +55,13 @@ class CommentForm extends Component {
                   Rating
                 </label>
                 <div className='form-group' md={12}>
-                  <Control.select model='.rating' id='rating' name='rating' className='form-control'>
+                  <Control.Select model='.rating' id='rating' name='rating' className='form-control'>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                     <option>5</option>
-                  </Control.select>
+                  </Control.Select>
                 </div>
               </div>
               <div className='form-group'>
@@ -69,7 +69,7 @@ class CommentForm extends Component {
                   Your Name
                 </label>
                 <div md={12}>
-                  <Control.text model='.author' id='author' name='author' placeholder='Your Name'  className='form-control' 
+                  <Control.Text model='.author' id='author' name='author' placeholder='Your Name'  className='form-control' 
                     validators={{
                       minLength: minLength(2),
                       maxLength: maxLength(15)
@@ -87,7 +87,7 @@ class CommentForm extends Component {
                   Comments
                 </label>
                 <div md={12}>
-                  <Control.textarea model='.text' id='text' name='text' rows='6' className='form-control'/>
+                  <Control.Textarea model='.text' id='text' name='text' rows='6' className='form-control'/>
                 </div>
               </div>
               <div className='form-group'>
